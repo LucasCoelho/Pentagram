@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'Pentagram_Example' do
+  pod 'Pentagram', :path => '../'
+
+  target 'Pentagram_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
