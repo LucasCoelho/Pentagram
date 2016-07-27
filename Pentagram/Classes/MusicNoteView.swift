@@ -17,7 +17,7 @@ public class MusicNoteView: UIView {
     
     deinit {
         if observer != nil {
-            try removeObserver(observer, forKeyPath: "center", context: nil)
+            removeObserver(observer, forKeyPath: "center", context: nil)
         }
     }
 

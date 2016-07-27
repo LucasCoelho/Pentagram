@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         addChildViewController(pentagram)
         view.addSubview(pentagram.view)
         pentagram.key = .F
-        note = pentagram.drawNoteForName(.Do4)
+        note = pentagram.drawNoteForName(.Do3)
         view.addSubview(label)
     }
 

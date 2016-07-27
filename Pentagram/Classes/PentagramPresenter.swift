@@ -81,6 +81,7 @@ struct PentagramPresenter {
             finalPositions = [.Do4: note1, .Si3: note2, .La3: note3, .Sol3: note4, .Fa3: note5, .Mi3: note6,
                               .Re3: note7, .Do3: note8, .Si2: note9, .La2: note10, .Sol2: note11, .Fa2: note12, .Mi2: note13]
         }
+        print(finalPositions)
         positionsToAddSupplementaryLine = [note1, note13]
     }
     
