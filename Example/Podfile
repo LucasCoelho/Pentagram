@@ -4,6 +4,7 @@ target 'Pentagram_Example' do
   pod 'Pentagram', :path => '../'
 
   target 'Pentagram_Tests' do
+      pod 'Pentagram', :path => '../'
     inherit! :search_paths
 
     

@@ -32,9 +32,10 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'Pentagram/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'Pentagram' => ['Pentagram/Assets/*.png']
-  # }
+  s.resource_bundles = {
+    'Pentagram' => ['Pentagram/**/*.xib']
+#   'Pentagram' => ['Pentagram/Assets/*.png']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
