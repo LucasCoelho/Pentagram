@@ -22,7 +22,7 @@ pod 'Pentagram'
 
 ## Author
 
-Lucas, lucas.coelho@me.com
+Lucas Coelho, lucas@coelho.be
 
 ## License
 
