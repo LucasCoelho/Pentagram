@@ -1,6 +1,5 @@
 # Pentagram
 
-[![CI Status](http://img.shields.io/travis/Lucas/Pentagram.svg?style=flat)](https://travis-ci.org/Lucas/Pentagram)
 [![Version](https://img.shields.io/cocoapods/v/Pentagram.svg?style=flat)](http://cocoapods.org/pods/Pentagram)
 [![License](https://img.shields.io/cocoapods/l/Pentagram.svg?style=flat)](http://cocoapods.org/pods/Pentagram)
 [![Platform](https://img.shields.io/cocoapods/p/Pentagram.svg?style=flat)](http://cocoapods.org/pods/Pentagram)
