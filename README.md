@@ -9,8 +9,6 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
-
 ## Installation
 
 Pentagram is available through [CocoaPods](http://cocoapods.org). To install
@@ -20,6 +18,21 @@ it, simply add the following line to your Podfile:
 pod 'Pentagram'
 ```
 
+## Usage
+```swift
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        let pentagram = PentagramViewController.getPentagram(5, spaceBetweenLines: 24, topPosition: 200)
+
+        addChildViewController(pentagram)
+        view.addSubview(pentagram.view)
+        pentagram.didMoveToParentViewController(self)
+        
+        pentagram.key = .F
+        
+        let note = pentagram.drawNoteForName(.Do3)
+    }
+```
 ## Author
 
 Lucas Coelho, lucas@coelho.be
