@@ -1,0 +1,6 @@
+framework module Pentagram {
+  umbrella header "Pentagram-umbrella.h"
+
+  export *
+  module * { export * }
+}

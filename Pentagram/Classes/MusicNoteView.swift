@@ -8,12 +8,18 @@
 
 import UIKit
 
-public class MusicNoteView: UIView {
+open class MusicNoteView: UIView {
     
     var observer: NSObject!
-    private var supplementaryLine: UIView!
+    fileprivate var supplementaryLine: UIView!
 
+    var color = UIColor.gray {
+        didSet {
+            changeColor(color)
+        }
+    }
     var supplementaryLineHidden = false
+    var path: UIBezierPath!
     
     deinit {
         if observer != nil {
@@ -21,23 +27,34 @@ public class MusicNoteView: UIView {
         }
     }
 
-    override public func drawRect(rect: CGRect) {
-        let path = UIBezierPath(ovalInRect: CGRect(x: 0, y: 0, width: rect.width, height: rect.height))
-        UIColor.grayColor().setFill()
-        transform = CGAffineTransformMakeRotation(CGFloat(-M_PI/8));
+    override open func draw(_ rect: CGRect) {
+        path = UIBezierPath(ovalIn: CGRect(x: 0, y: 0, width: rect.width, height: rect.height))
+        color.setFill()
         path.fill()
+        transform = CGAffineTransform(rotationAngle: CGFloat(-M_PI/8));
 
-        let bounds = CGPathGetBoundingBox(path.CGPath)
-        let center = CGPoint(x: CGRectGetMidX(bounds), y: CGRectGetMidY(bounds))
+        let bounds = path.cgPath.boundingBox
+        let center = CGPoint(x: bounds.midX, y: bounds.midY)
         supplementaryLine = UIView(frame: CGRect(x: 0, y: 0, width: rect.width*2, height: 5))
-        supplementaryLine.backgroundColor = UIColor.grayColor()
+        supplementaryLine.backgroundColor = color
         supplementaryLine.center = center
-        supplementaryLine.hidden = supplementaryLineHidden
-        supplementaryLine.transform = CGAffineTransformMakeRotation(CGFloat(M_PI/8));
+        supplementaryLine.isHidden = supplementaryLineHidden
+        supplementaryLine.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI/8));
         addSubview(supplementaryLine)
     }
     
-    public func showSupplementaryLine(show: Bool) {
-        supplementaryLine.hidden = !show
+    open func showSupplementaryLine(_ show: Bool) {
+        supplementaryLine?.isHidden = !show
+    }
+    
+    func changeColor(_ color: UIColor) {
+        guard supplementaryLine != nil && path != nil else { return }
+
+        let fillLayer = CAShapeLayer()
+        fillLayer.path = path.cgPath
+        fillLayer.fillColor = color.cgColor
+        layer.addSublayer(fillLayer)
+        
+        supplementaryLine.backgroundColor = color
     }
 }

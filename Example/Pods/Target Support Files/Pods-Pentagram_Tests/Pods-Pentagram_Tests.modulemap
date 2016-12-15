@@ -1,0 +1,6 @@
+framework module Pods_Pentagram_Tests {
+  umbrella header "Pods-Pentagram_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

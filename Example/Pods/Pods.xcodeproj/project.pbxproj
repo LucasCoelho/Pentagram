@@ -1,0 +1,870 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A469E995DA6031CA43FCAE07E1A101D /* Pentagram-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BE2A33C5E1868DBC68DD503D2BD92E78 /* Pentagram-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F498898B50CF2C27647C91DF3F17FF3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		4388C5E5ECCE1AE04A65C4E18414B16C /* Pods-Pentagram_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E49A3C3A423C08168ACC87158DB39A /* Pods-Pentagram_Example-dummy.m */; };
+		5A181A9DC877E96B5D6E085CA97EB3C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		5F100E616C189B0C24F529C90AA5F81D /* MusicNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1269C99A9326C090719CC9B7E88EA1A /* MusicNoteView.swift */; };
+		6E38F4435CA933874FD802E47A3AD7A2 /* Pentagram.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 07C3D5A012046BF98532A8EE89545A7B /* Pentagram.bundle */; };
+		79EA96217E03CAC2F68A88A6BEBE944F /* Pods-Pentagram_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D2C4BB84AB464714B4B7B4253E14CA0 /* Pods-Pentagram_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8ACE199C4D68C2A645C14BF6DCFA0883 /* Pods-Pentagram_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A242F2A25033F5936A588353FDDFF5E5 /* Pods-Pentagram_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95EC2B1A6971EF807765FD4A475B81F6 /* PentagramViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E00F6858308EEB52A684B00B31DBE51 /* PentagramViewController.xib */; };
+		A3EF456AE0E8F27CED8AF196F2D98188 /* Pods-Pentagram_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C715172223BB0C6DFA49759B271BF41B /* Pods-Pentagram_Tests-dummy.m */; };
+		A577BE21883E59007764310B79F7D6CF /* PentagramViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = 7E00F6858308EEB52A684B00B31DBE51 /* PentagramViewController.xib */; };
+		C957919369DF3BF80968B9AD4EF81B5F /* Pentagram-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA3B9658DA297D81362F15A71D1120B /* Pentagram-dummy.m */; };
+		D424F5271D47FFC9002C5393 /* PentagramPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D424F5261D47FFC9002C5393 /* PentagramPresenter.swift */; };
+		DC1C21A0E8EEE40607F61E9783720530 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		E2D324148F67DDFB447CA7C2CD6BC406 /* PentagramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4355FF816778D0DC473A505EA011CACC /* PentagramViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0CA682E7A62A38781A9125EBEF6591DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF68DE67B0ED97E821C291E822F74EC2;
+			remoteInfo = Pentagram;
+		};
+		6BFCBDD4F205682DF8A6265A8C2D733B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF68DE67B0ED97E821C291E822F74EC2;
+			remoteInfo = Pentagram;
+		};
+		EE9E6ADB0F2E1BCEEC9C9A7AC6272ACA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1828E1BB6E8C4B7A7A77DC5902303CA2;
+			remoteInfo = "Pentagram-Pentagram";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00D1DA4F1FF3D70FFC67937A30C89117 /* Pods-Pentagram_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pentagram_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		07C3D5A012046BF98532A8EE89545A7B /* Pentagram.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Pentagram.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A9BFFC25015DA1061678E252D7770B8 /* Pentagram-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pentagram-prefix.pch"; sourceTree = "<group>"; };
+		0FF110C1569BDD4A68A2AB9A1EF2B897 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11D42EE1524A1D7696ACB71B86EE34D6 /* Pods-Pentagram_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Pentagram_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		17A3EF403BCDD753722179F307760D05 /* Pods-Pentagram_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pentagram_Example.release.xcconfig"; sourceTree = "<group>"; };
+		1C3EA8E717C217F1B8DA54EEED213C47 /* Pentagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pentagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AD09EC60EA42E03C76A12F0580743D8 /* Pods-Pentagram_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Pentagram_Tests.modulemap"; sourceTree = "<group>"; };
+		3900FAC8D1B77FB24625E2F4416B66E5 /* Pentagram.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pentagram.modulemap; sourceTree = "<group>"; };
+		4355FF816778D0DC473A505EA011CACC /* PentagramViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PentagramViewController.swift; sourceTree = "<group>"; };
+		454D774E5767FA64B13EDF554630F06F /* Pods-Pentagram_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pentagram_Example-frameworks.sh"; sourceTree = "<group>"; };
+		57ED84E76026D3368DA2A65F71573260 /* Pods_Pentagram_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pentagram_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		59EF64064971A4E8D04DF8191CA1F47F /* Pods-Pentagram_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pentagram_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		645B05D8CDEB021D11E0F93F20593EFF /* Pods_Pentagram_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pentagram_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D56EE751BFD2A6A8CCB38C19E282CC0 /* Pods-Pentagram_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pentagram_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		7DD9E57E18B580180E937853D97E0C90 /* Pentagram.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pentagram.xcconfig; sourceTree = "<group>"; };
+		7E00F6858308EEB52A684B00B31DBE51 /* PentagramViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PentagramViewController.xib; sourceTree = "<group>"; };
+		87D53A02FAE71A2F33F04D2DF778CC6E /* Pods-Pentagram_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pentagram_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		92BA335D078D0AAA57C127858A8502B6 /* Pods-Pentagram_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pentagram_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94C3939471DA5C5083A4494215A4F5C2 /* Pods-Pentagram_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pentagram_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		9D2C4BB84AB464714B4B7B4253E14CA0 /* Pods-Pentagram_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Pentagram_Example-umbrella.h"; sourceTree = "<group>"; };
+		A242F2A25033F5936A588353FDDFF5E5 /* Pods-Pentagram_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Pentagram_Tests-umbrella.h"; sourceTree = "<group>"; };
+		B0E95E2CB2B1FD110DBFEB1C3D100673 /* Pods-Pentagram_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Pentagram_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BE2A33C5E1868DBC68DD503D2BD92E78 /* Pentagram-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pentagram-umbrella.h"; sourceTree = "<group>"; };
+		BFA3B9658DA297D81362F15A71D1120B /* Pentagram-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pentagram-dummy.m"; sourceTree = "<group>"; };
+		C1269C99A9326C090719CC9B7E88EA1A /* MusicNoteView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MusicNoteView.swift; sourceTree = "<group>"; };
+		C5560B17B7442DD8AC26A84B17C8A4A6 /* Pods-Pentagram_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Pentagram_Example.modulemap"; sourceTree = "<group>"; };
+		C715172223BB0C6DFA49759B271BF41B /* Pods-Pentagram_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pentagram_Tests-dummy.m"; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D424F5261D47FFC9002C5393 /* PentagramPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PentagramPresenter.swift; sourceTree = "<group>"; };
+		DAF5B0068A7E21F67617C92A3FF9B95D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8B5ECE0DFEFD5B07A010EC5595D3978 /* Pods-Pentagram_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pentagram_Tests-resources.sh"; sourceTree = "<group>"; };
+		F5E49A3C3A423C08168ACC87158DB39A /* Pods-Pentagram_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pentagram_Example-dummy.m"; sourceTree = "<group>"; };
+		FA3F5610EBBCA4D074E75DF18250A1B5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBB817D4854A90F7694816427C717A76 /* Pods-Pentagram_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pentagram_Example-resources.sh"; sourceTree = "<group>"; };
+		FEE1918BA7B36E50DF8F9B012AC4C361 /* ResourceBundle-Pentagram-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Pentagram-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		72364700BF5B86441757D48CD4A2776F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A181A9DC877E96B5D6E085CA97EB3C8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75053136178DE2E900F35DE03943D330 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A80CABD4E00FB578A62DAD1BD0D0C595 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F498898B50CF2C27647C91DF3F17FF3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8130F3C6BCC8A43C66B65A71ECD612E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC1C21A0E8EEE40607F61E9783720530 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1319B53499B7E9D25EEEC82643F4DDC1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DAF5B0068A7E21F67617C92A3FF9B95D /* Info.plist */,
+				3900FAC8D1B77FB24625E2F4416B66E5 /* Pentagram.modulemap */,
+				7DD9E57E18B580180E937853D97E0C90 /* Pentagram.xcconfig */,
+				BFA3B9658DA297D81362F15A71D1120B /* Pentagram-dummy.m */,
+				0A9BFFC25015DA1061678E252D7770B8 /* Pentagram-prefix.pch */,
+				BE2A33C5E1868DBC68DD503D2BD92E78 /* Pentagram-umbrella.h */,
+				FEE1918BA7B36E50DF8F9B012AC4C361 /* ResourceBundle-Pentagram-Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Pentagram";
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		3F2D50E63B6C47362554C2D7C7D2DDE2 /* Pods-Pentagram_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				FA3F5610EBBCA4D074E75DF18250A1B5 /* Info.plist */,
+				2AD09EC60EA42E03C76A12F0580743D8 /* Pods-Pentagram_Tests.modulemap */,
+				11D42EE1524A1D7696ACB71B86EE34D6 /* Pods-Pentagram_Tests-acknowledgements.markdown */,
+				00D1DA4F1FF3D70FFC67937A30C89117 /* Pods-Pentagram_Tests-acknowledgements.plist */,
+				C715172223BB0C6DFA49759B271BF41B /* Pods-Pentagram_Tests-dummy.m */,
+				87D53A02FAE71A2F33F04D2DF778CC6E /* Pods-Pentagram_Tests-frameworks.sh */,
+				E8B5ECE0DFEFD5B07A010EC5595D3978 /* Pods-Pentagram_Tests-resources.sh */,
+				A242F2A25033F5936A588353FDDFF5E5 /* Pods-Pentagram_Tests-umbrella.h */,
+				59EF64064971A4E8D04DF8191CA1F47F /* Pods-Pentagram_Tests.debug.xcconfig */,
+				92BA335D078D0AAA57C127858A8502B6 /* Pods-Pentagram_Tests.release.xcconfig */,
+			);
+			name = "Pods-Pentagram_Tests";
+			path = "Target Support Files/Pods-Pentagram_Tests";
+			sourceTree = "<group>";
+		};
+		7AF35E1DF0670E08EEFA623D38EDE75E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C1269C99A9326C090719CC9B7E88EA1A /* MusicNoteView.swift */,
+				4355FF816778D0DC473A505EA011CACC /* PentagramViewController.swift */,
+				7E00F6858308EEB52A684B00B31DBE51 /* PentagramViewController.xib */,
+				D424F5261D47FFC9002C5393 /* PentagramPresenter.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				DBBE24A4E0DF2BC5CC778144CFEF15C2 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				EE36FF514BE7F87A1F8DF27FCDC1AB7F /* Products */,
+				DF480D65F05E2706E515D389E305AD8A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9FF522E00F9896B7E8612E66A9768CE9 /* Pentagram */ = {
+			isa = PBXGroup;
+			children = (
+				7AF35E1DF0670E08EEFA623D38EDE75E /* Classes */,
+			);
+			path = Pentagram;
+			sourceTree = "<group>";
+		};
+		A70B70071002AD946E9954247AE8F047 /* Pods-Pentagram_Example */ = {
+			isa = PBXGroup;
+			children = (
+				0FF110C1569BDD4A68A2AB9A1EF2B897 /* Info.plist */,
+				C5560B17B7442DD8AC26A84B17C8A4A6 /* Pods-Pentagram_Example.modulemap */,
+				B0E95E2CB2B1FD110DBFEB1C3D100673 /* Pods-Pentagram_Example-acknowledgements.markdown */,
+				94C3939471DA5C5083A4494215A4F5C2 /* Pods-Pentagram_Example-acknowledgements.plist */,
+				F5E49A3C3A423C08168ACC87158DB39A /* Pods-Pentagram_Example-dummy.m */,
+				454D774E5767FA64B13EDF554630F06F /* Pods-Pentagram_Example-frameworks.sh */,
+				FBB817D4854A90F7694816427C717A76 /* Pods-Pentagram_Example-resources.sh */,
+				9D2C4BB84AB464714B4B7B4253E14CA0 /* Pods-Pentagram_Example-umbrella.h */,
+				7D56EE751BFD2A6A8CCB38C19E282CC0 /* Pods-Pentagram_Example.debug.xcconfig */,
+				17A3EF403BCDD753722179F307760D05 /* Pods-Pentagram_Example.release.xcconfig */,
+			);
+			name = "Pods-Pentagram_Example";
+			path = "Target Support Files/Pods-Pentagram_Example";
+			sourceTree = "<group>";
+		};
+		AC0493BE3585885A91C290B9C6163AB9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6425C60AEDE144EB03FA52B331F6D5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F76B37610C17F770DD3B0B111AB5A62C /* Pentagram */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		DBBE24A4E0DF2BC5CC778144CFEF15C2 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F9A6EDFDCAC97041EC41CE0CBDCD076A /* Pentagram */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		DF480D65F05E2706E515D389E305AD8A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A70B70071002AD946E9954247AE8F047 /* Pods-Pentagram_Example */,
+				3F2D50E63B6C47362554C2D7C7D2DDE2 /* Pods-Pentagram_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		EE36FF514BE7F87A1F8DF27FCDC1AB7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07C3D5A012046BF98532A8EE89545A7B /* Pentagram.bundle */,
+				1C3EA8E717C217F1B8DA54EEED213C47 /* Pentagram.framework */,
+				57ED84E76026D3368DA2A65F71573260 /* Pods_Pentagram_Example.framework */,
+				645B05D8CDEB021D11E0F93F20593EFF /* Pods_Pentagram_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F76B37610C17F770DD3B0B111AB5A62C /* Pentagram */ = {
+			isa = PBXGroup;
+			children = (
+				AC0493BE3585885A91C290B9C6163AB9 /* Classes */,
+			);
+			path = Pentagram;
+			sourceTree = "<group>";
+		};
+		F9A6EDFDCAC97041EC41CE0CBDCD076A /* Pentagram */ = {
+			isa = PBXGroup;
+			children = (
+				9FF522E00F9896B7E8612E66A9768CE9 /* Pentagram */,
+				BF6425C60AEDE144EB03FA52B331F6D5 /* Resources */,
+				1319B53499B7E9D25EEEC82643F4DDC1 /* Support Files */,
+			);
+			name = Pentagram;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		00CB9313065717DD621AD744328D65D3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79EA96217E03CAC2F68A88A6BEBE944F /* Pods-Pentagram_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44EF30923FAD19287E4BAEC8256F497C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ACE199C4D68C2A645C14BF6DCFA0883 /* Pods-Pentagram_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82EAB911AAE46689AB18B2898755F9D3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A469E995DA6031CA43FCAE07E1A101D /* Pentagram-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0C88189AF39A9712002AFD98DDB61A2D /* Pods-Pentagram_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA9B81112B0F97BED6BDF543DC54DE27 /* Build configuration list for PBXNativeTarget "Pods-Pentagram_Example" */;
+			buildPhases = (
+				D6C5A9ED719526E43849932F4DE8DEF3 /* Sources */,
+				A80CABD4E00FB578A62DAD1BD0D0C595 /* Frameworks */,
+				00CB9313065717DD621AD744328D65D3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				16DC34BF6E483AE4509A4E31FB63D57D /* PBXTargetDependency */,
+			);
+			name = "Pods-Pentagram_Example";
+			productName = "Pods-Pentagram_Example";
+			productReference = 57ED84E76026D3368DA2A65F71573260 /* Pods_Pentagram_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1828E1BB6E8C4B7A7A77DC5902303CA2 /* Pentagram-Pentagram */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12B5B072DEE7DD763B7486E96C6186BD /* Build configuration list for PBXNativeTarget "Pentagram-Pentagram" */;
+			buildPhases = (
+				CB3733BC118E41ACEFCABA01564253C9 /* Sources */,
+				75053136178DE2E900F35DE03943D330 /* Frameworks */,
+				72C00A2C3378C089C833F0DBB286AB9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pentagram-Pentagram";
+			productName = "Pentagram-Pentagram";
+			productReference = 07C3D5A012046BF98532A8EE89545A7B /* Pentagram.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		3D67859D3335DDD8FD381B9B1498B185 /* Pods-Pentagram_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1B27114DFD0384957ACD6A58D79ABAA /* Build configuration list for PBXNativeTarget "Pods-Pentagram_Tests" */;
+			buildPhases = (
+				3A03A7ABDBDB9A72157A1598D3A69F29 /* Sources */,
+				D8130F3C6BCC8A43C66B65A71ECD612E /* Frameworks */,
+				44EF30923FAD19287E4BAEC8256F497C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D191920F4FCB0582F423A725FB562B3 /* PBXTargetDependency */,
+			);
+			name = "Pods-Pentagram_Tests";
+			productName = "Pods-Pentagram_Tests";
+			productReference = 645B05D8CDEB021D11E0F93F20593EFF /* Pods_Pentagram_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FF68DE67B0ED97E821C291E822F74EC2 /* Pentagram */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D4FCB9898F2401287E274D8291FD80B /* Build configuration list for PBXNativeTarget "Pentagram" */;
+			buildPhases = (
+				803F6845C509F088980EFF74E7F38FC3 /* Sources */,
+				72364700BF5B86441757D48CD4A2776F /* Frameworks */,
+				91E1B0B8590B598305BAC37F58BB764A /* Resources */,
+				82EAB911AAE46689AB18B2898755F9D3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E762F35ECC40F960AA0F685213E3D3B0 /* PBXTargetDependency */,
+			);
+			name = Pentagram;
+			productName = Pentagram;
+			productReference = 1C3EA8E717C217F1B8DA54EEED213C47 /* Pentagram.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					0C88189AF39A9712002AFD98DDB61A2D = {
+						LastSwiftMigration = 0810;
+					};
+					3D67859D3335DDD8FD381B9B1498B185 = {
+						LastSwiftMigration = 0810;
+					};
+					FF68DE67B0ED97E821C291E822F74EC2 = {
+						LastSwiftMigration = 0810;
+					};
+				};
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = EE36FF514BE7F87A1F8DF27FCDC1AB7F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF68DE67B0ED97E821C291E822F74EC2 /* Pentagram */,
+				1828E1BB6E8C4B7A7A77DC5902303CA2 /* Pentagram-Pentagram */,
+				0C88189AF39A9712002AFD98DDB61A2D /* Pods-Pentagram_Example */,
+				3D67859D3335DDD8FD381B9B1498B185 /* Pods-Pentagram_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		72C00A2C3378C089C833F0DBB286AB9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95EC2B1A6971EF807765FD4A475B81F6 /* PentagramViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91E1B0B8590B598305BAC37F58BB764A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E38F4435CA933874FD802E47A3AD7A2 /* Pentagram.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A03A7ABDBDB9A72157A1598D3A69F29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3EF456AE0E8F27CED8AF196F2D98188 /* Pods-Pentagram_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		803F6845C509F088980EFF74E7F38FC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F100E616C189B0C24F529C90AA5F81D /* MusicNoteView.swift in Sources */,
+				D424F5271D47FFC9002C5393 /* PentagramPresenter.swift in Sources */,
+				C957919369DF3BF80968B9AD4EF81B5F /* Pentagram-dummy.m in Sources */,
+				E2D324148F67DDFB447CA7C2CD6BC406 /* PentagramViewController.swift in Sources */,
+				A577BE21883E59007764310B79F7D6CF /* PentagramViewController.xib in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB3733BC118E41ACEFCABA01564253C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6C5A9ED719526E43849932F4DE8DEF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4388C5E5ECCE1AE04A65C4E18414B16C /* Pods-Pentagram_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0D191920F4FCB0582F423A725FB562B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Pentagram;
+			target = FF68DE67B0ED97E821C291E822F74EC2 /* Pentagram */;
+			targetProxy = 6BFCBDD4F205682DF8A6265A8C2D733B /* PBXContainerItemProxy */;
+		};
+		16DC34BF6E483AE4509A4E31FB63D57D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Pentagram;
+			target = FF68DE67B0ED97E821C291E822F74EC2 /* Pentagram */;
+			targetProxy = 0CA682E7A62A38781A9125EBEF6591DA /* PBXContainerItemProxy */;
+		};
+		E762F35ECC40F960AA0F685213E3D3B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pentagram-Pentagram";
+			target = 1828E1BB6E8C4B7A7A77DC5902303CA2 /* Pentagram-Pentagram */;
+			targetProxy = EE9E6ADB0F2E1BCEEC9C9A7AC6272ACA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00ADFC8E034832F25D7F9F7132520E9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92BA335D078D0AAA57C127858A8502B6 /* Pods-Pentagram_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Pentagram_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Pentagram_Tests/Pods-Pentagram_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Pentagram_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0A4E762F8AD40B70B9D09B6196220A36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D56EE751BFD2A6A8CCB38C19E282CC0 /* Pods-Pentagram_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Pentagram_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Pentagram_Example/Pods-Pentagram_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Pentagram_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2604049DC670AF83D92F5089231C3C03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59EF64064971A4E8D04DF8191CA1F47F /* Pods-Pentagram_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Pentagram_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Pentagram_Tests/Pods-Pentagram_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Pentagram_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		33E18E7FA0699B0E8B11152D07CF3AD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DD9E57E18B580180E937853D97E0C90 /* Pentagram.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pentagram/Pentagram-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pentagram/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pentagram/Pentagram.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Pentagram;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		656056EF1A02B41CC72BC1CCBFE5CB17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17A3EF403BCDD753722179F307760D05 /* Pods-Pentagram_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Pentagram_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Pentagram_Example/Pods-Pentagram_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Pentagram_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7983B5EDE99DD52501F4AB2DFF7A99CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DD9E57E18B580180E937853D97E0C90 /* Pentagram.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pentagram";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pentagram/ResourceBundle-Pentagram-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = Pentagram;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		91EA204B62F67A18560A83698FC930DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DD9E57E18B580180E937853D97E0C90 /* Pentagram.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pentagram";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pentagram/ResourceBundle-Pentagram-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = Pentagram;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		C11F312B13EC7D5E29AA6079B5E85A2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DD9E57E18B580180E937853D97E0C90 /* Pentagram.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pentagram/Pentagram-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pentagram/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pentagram/Pentagram.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Pentagram;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12B5B072DEE7DD763B7486E96C6186BD /* Build configuration list for PBXNativeTarget "Pentagram-Pentagram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91EA204B62F67A18560A83698FC930DA /* Debug */,
+				7983B5EDE99DD52501F4AB2DFF7A99CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */,
+				0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D4FCB9898F2401287E274D8291FD80B /* Build configuration list for PBXNativeTarget "Pentagram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33E18E7FA0699B0E8B11152D07CF3AD8 /* Debug */,
+				C11F312B13EC7D5E29AA6079B5E85A2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1B27114DFD0384957ACD6A58D79ABAA /* Build configuration list for PBXNativeTarget "Pods-Pentagram_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2604049DC670AF83D92F5089231C3C03 /* Debug */,
+				00ADFC8E034832F25D7F9F7132520E9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA9B81112B0F97BED6BDF543DC54DE27 /* Build configuration list for PBXNativeTarget "Pods-Pentagram_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A4E762F8AD40B70B9D09B6196220A36 /* Debug */,
+				656056EF1A02B41CC72BC1CCBFE5CB17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -8,17 +8,19 @@
 
 import UIKit
 
-public class PentagramViewController: UIViewController {
+open class PentagramViewController: UIViewController {
     
     var presenter: PentagramPresenter!
     
-    public var key: MusicKey {
-        get {
-            return presenter.key
+    open var key: MusicKey = .g {
+        didSet {
+            presenter.key = key
         }
-        set {
-            presenter.key = newValue
-            presenter.updateFinalPositionsArray()
+    }
+    
+    open var color = UIColor.black {
+        didSet {
+            changeLinesColor(color)
         }
     }
         
@@ -36,12 +38,14 @@ public class PentagramViewController: UIViewController {
     @IBOutlet weak var line4: UIView!
     @IBOutlet weak var line5: UIView!
     
-    static public func getPentagram(lineWidth: CGFloat, spaceBetweenLines: CGFloat, topPosition: CGFloat) -> PentagramViewController {
-        let podBundle = NSBundle(forClass: self.classForCoder())
-        var nibBundle: NSBundle!
+    private var myContext = 0
+    
+    static open func getPentagram(lineWidth: CGFloat, spaceBetweenLines: CGFloat, topPosition: CGFloat) -> PentagramViewController {
+        let podBundle = Bundle(for: self.classForCoder())
+        var nibBundle: Bundle!
         
-        if let bundleURL = podBundle.URLForResource("Pentagram", withExtension: "bundle") {
-            if let bundle = NSBundle(URL: bundleURL) {
+        if let bundleURL = podBundle.url(forResource: "Pentagram", withExtension: "bundle") {
+            if let bundle = Bundle(url: bundleURL) {
                 nibBundle = bundle
             } else {
                 nibBundle = nil
@@ -51,59 +55,85 @@ public class PentagramViewController: UIViewController {
         }
         let viewController = PentagramViewController(nibName: "PentagramViewController", bundle: nibBundle)
         viewController.presenter = PentagramPresenter(topPosition: topPosition, lineWidth: lineWidth, spaceBetweenLines: spaceBetweenLines)
-        viewController.presenter.updateFinalPositionsArray()
         return viewController
     }
 
-    override public func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
         setupLayoutConstraints()
     }
     
-    override public func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
-        guard let newCenter = change!["new"]?.CGPointValue else {
-            return
+    override open func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+//        guard let newCenter = change!["new"]?.cgPointValue else {
+//            return
+//        }
+//        let note = object as! MusicNoteView
+//        addSupplementaryLineIfNeeded(newCenter.y, note: note)
+        
+        
+        if context == &myContext {
+            if let newValue = change?[.newKey] {
+                if let newCenter = (newValue as AnyObject).cgPointValue {
+                    let note = object as! MusicNoteView
+                    addSupplementaryLineIfNeeded(newCenter.y, note: note)
+                }
+            }
+        } else {
+            super.observeValue(forKeyPath: keyPath, of: object, change: change, context: context)
         }
-        let note = object as! MusicNoteView
-        addSupplementaryLineIfNeeded(newCenter.y, note: note)
     }
     
     // Other Public methods
-    public func drawNoteAtPosition(position: CGFloat) -> MusicNoteView {
+    open func drawNoteAtPosition(_ position: CGFloat) -> MusicNoteView {
         let note = MusicNoteView()
         note.frame = CGRect(x: 100, y: position, width: presenter.spaceBetweenLines * 1.5, height: presenter.spaceBetweenLines + 2)
-        note.backgroundColor = UIColor.clearColor()
+        note.backgroundColor = .clear
         note.center.y = position
-
-        note.addObserver(self, forKeyPath: "center", options: NSKeyValueObservingOptions.New, context: nil)
+        note.center.x = view.center.x
+        note.addObserver(self, forKeyPath: "center", options: NSKeyValueObservingOptions.new, context: &myContext)
         note.observer = self
         view.addSubview(note)
         note.supplementaryLineHidden = !presenter.shouldAddSupplementaryLine(position)
         return note
     }
     
-    public func drawNoteForName(name: NoteId) -> MusicNoteView {
+    open func drawNoteForName(_ name: NoteId) -> MusicNoteView {
         return drawNoteAtPosition(presenter.getFinalPositionForNote(name))
     }
     
-    public func getNameForNoteInPosition(position: CGFloat) -> String {
+    open func getNameForNoteInPosition(_ position: CGFloat) -> String {
         return presenter.getNameForNoteInPosition(position)
     }
     
-    public func getFinalPositionForPosition(position: CGFloat) -> CGFloat {
+    open func getNoteIdForPosition(_ position: CGFloat) -> NoteId {
+        return presenter.getNoteIdForPosition(position)
+    }
+
+    open func getFinalPositionForPosition(_ position: CGFloat) -> CGFloat {
         return presenter.getFinalPositionForPosition(position)
     }
-        
+    
+    open func getYPositionForNote(_ note: NoteId) -> CGFloat {
+        return presenter.getFinalPositionForNote(note)
+    }
+    
     // Private methods
-    private func setupLayoutConstraints() {
+    fileprivate func setupLayoutConstraints() {
         for constraint in [space1, space2, space3, space4] {
-            constraint.constant = presenter.spaceBetweenLines
+            constraint?.constant = presenter.spaceBetweenLines
         }
         yPosition.constant = presenter.topPosition
         lineHeight.constant = presenter.lineWidth
     }
     
-    private func addSupplementaryLineIfNeeded(position: CGFloat, note: MusicNoteView) {
+    fileprivate func addSupplementaryLineIfNeeded(_ position: CGFloat, note: MusicNoteView) {
         note.showSupplementaryLine(presenter.shouldAddSupplementaryLine(position))
+    }
+    
+    fileprivate func changeLinesColor(_ color: UIColor) {
+        let lines = [line1, line2, line3, line4, line5]
+        for line in lines {
+            line?.backgroundColor = color
+        }
     }
 }
