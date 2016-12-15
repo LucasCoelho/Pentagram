@@ -14,12 +14,12 @@ class Tests: XCTestCase {
     
     func testMiddleCPosition() {
         var sut = PentagramPresenter(topPosition: 200, lineWidth: 5, spaceBetweenLines: 24)
-        sut.key = .G
+        sut.key = .g
         var expectedPosition: CGFloat = 347.5
         sut.updateFinalPositionsArray()
         XCTAssert(expectedPosition == sut.finalPositions[.Do4])
         
-        sut.key = .F
+        sut.key = .f
         expectedPosition = 178.5
         sut.updateFinalPositionsArray()
         XCTAssert(expectedPosition == sut.finalPositions[.Do4])
@@ -58,7 +58,7 @@ class Tests: XCTestCase {
     func testFinalPositionForNoteGKey() {
         var sut = PentagramPresenter(topPosition: 200, lineWidth: 5, spaceBetweenLines: 24)
         sut.updateFinalPositionsArray()
-        sut.key = .F
+        sut.key = .g
 
         var expectedPosition: CGFloat = 231.5
         var result = sut.getFinalPositionForNote(.Re5)
@@ -75,7 +75,7 @@ class Tests: XCTestCase {
     
     func testFinalPositionForNoteFKey() {
         var sut = PentagramPresenter(topPosition: 200, lineWidth: 5, spaceBetweenLines: 24)
-        sut.key = .F
+        sut.key = .f
         sut.updateFinalPositionsArray()
         
         var expectedPosition: CGFloat = 333.0
@@ -93,7 +93,7 @@ class Tests: XCTestCase {
     
     func testNameForPositionFKey() {
         var sut = PentagramPresenter(topPosition: 200, lineWidth: 5, spaceBetweenLines: 24)
-        sut.key = .F
+        sut.key = .f
         sut.updateFinalPositionsArray()
         
         var expectedNote = NoteId.La2

@@ -34,16 +34,28 @@ public enum NoteId: String {
     case Fa5 = "FA5"
     case Sol5 = "SOL5"
     case La5 = "LA5"
+    
+    public func getName() -> String {
+        return NSLocalizedString("_\(rawValue.substring(to: rawValue.characters.index(before: rawValue.endIndex)).lowercased())", comment: "").uppercased()
+    }
+    
+    public static func getAllNotes() -> [NoteId] {
+        return [.Do4, .Re4, .Mi4, .Fa4, .Sol4, .La4, .Si4, .Do5, .Re5, .Mi5, .Fa5, .Sol5, .La5]
+    }
 }
 
 public enum MusicKey {
-    case G
-    case F
+    case g
+    case f
 }
 
 struct PentagramPresenter {
     
-    var key: MusicKey = .G
+    var key: MusicKey = .g {
+        didSet {
+            updateFinalPositionsArray()
+        }
+    }
     
     var spaceBetweenLines: CGFloat!
     var topPosition: CGFloat!
@@ -55,6 +67,7 @@ struct PentagramPresenter {
         self.topPosition = topPosition
         self.lineWidth = lineWidth
         self.spaceBetweenLines = spaceBetweenLines
+        updateFinalPositionsArray()
     }
     
     mutating func updateFinalPositionsArray() {
@@ -74,27 +87,30 @@ struct PentagramPresenter {
         let note12 = firstLine + 4.5 * (spaceBetweenLines + lineWidth)
         let note13 = firstLine + 5.0 * (spaceBetweenLines + lineWidth)
         
-        if key == .G {
+        if key == .g {
             finalPositions = [.La5: note1, .Sol5: note2, .Fa5: note3, .Mi5: note4, .Re5: note5, .Do5: note6,
                               .Si4: note7, .La4: note8, .Sol4: note9, .Fa4: note10, .Mi4: note11, .Re4: note12, .Do4: note13]
         } else {
             finalPositions = [.Do4: note1, .Si3: note2, .La3: note3, .Sol3: note4, .Fa3: note5, .Mi3: note6,
                               .Re3: note7, .Do3: note8, .Si2: note9, .La2: note10, .Sol2: note11, .Fa2: note12, .Mi2: note13]
         }
-        print(finalPositions)
         positionsToAddSupplementaryLine = [note1, note13]
     }
     
-    func getNameForNoteInPosition(position: CGFloat) -> String {
-        for (key, value) in finalPositions {
-            if getFinalPositionForPosition(position) == value {
-                return key.rawValue
-            }
-        }
-        return "DO"
+    func getNameForNoteInPosition(_ position: CGFloat) -> String {
+        return getNoteIdForPosition(position).rawValue
     }
     
-    func getFinalPositionForPosition(position: CGFloat) -> CGFloat {
+    func getNoteIdForPosition(_ position: CGFloat) -> NoteId {
+        for (key, value) in finalPositions {
+            if getFinalPositionForPosition(position) == value {
+                return key
+            }
+        }
+        return .Do4
+    }
+    
+    func getFinalPositionForPosition(_ position: CGFloat) -> CGFloat {
         var smallerValue = abs(finalPositions[.Do4]! - position)
         var finalPosition = finalPositions[.Do4]
         for note in finalPositions {
@@ -106,11 +122,11 @@ struct PentagramPresenter {
         return finalPosition!
     }
     
-    func getFinalPositionForNote(note: NoteId) -> CGFloat {
+    func getFinalPositionForNote(_ note: NoteId) -> CGFloat {
         return finalPositions[note]!
     }
     
-    func shouldAddSupplementaryLine(position: CGFloat) -> Bool {
+    func shouldAddSupplementaryLine(_ position: CGFloat) -> Bool {
         if positionsToAddSupplementaryLine.contains(getFinalPositionForPosition(position)) {
             return true
         } else {

@@ -1,0 +1,16 @@
+PODS:
+  - Pentagram (0.1.0)
+
+DEPENDENCIES:
+  - Pentagram (from `../`)
+
+EXTERNAL SOURCES:
+  Pentagram:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Pentagram: 3cb3723fbb269e68334e84a95938005ff861faf8
+
+PODFILE CHECKSUM: 6c120c053d05554888f3400ed20031ec6acddc4b
+
+COCOAPODS: 1.0.1

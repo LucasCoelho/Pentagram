@@ -1,0 +1,27 @@
+{
+  "name": "Pentagram",
+  "version": "0.1.0",
+  "summary": "A short description of Pentagram.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/Pentagram",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Lucas": "lucas.coelho@me.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/Pentagram.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "Pentagram/Classes/**/*",
+  "resource_bundles": {
+    "Pentagram": [
+      "Pentagram/**/*.xib"
+    ]
+  }
+}
