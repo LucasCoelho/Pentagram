@@ -21,13 +21,13 @@ pod 'Pentagram'
 ```swift
     override func viewDidLoad() {
         super.viewDidLoad()
-        let pentagram = PentagramViewController.getPentagram(5, spaceBetweenLines: 24, topPosition: 200)
-
+                let pentagram = PentagramViewController.getPentagram(lineWidth: 5, spaceBetweenLines: 24, topPosition: 200)
+        
         addChildViewController(pentagram)
         view.addSubview(pentagram.view)
-        pentagram.didMoveToParentViewController(self)
+        pentagram.didMove(toParentViewController: self)
         
-        pentagram.key = .F
+        pentagram.key = .f
         
         let note = pentagram.drawNoteForName(.Do3)
     }
