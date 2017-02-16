@@ -21,7 +21,7 @@ pod 'Pentagram'
 ```swift
     override func viewDidLoad() {
         super.viewDidLoad()
-                let pentagram = PentagramViewController.getPentagram(lineWidth: 5, spaceBetweenLines: 24, topPosition: 200)
+        let pentagram = PentagramViewController.getPentagram(lineWidth: 5, spaceBetweenLines: 24, topPosition: 200)
         
         addChildViewController(pentagram)
         view.addSubview(pentagram.view)
@@ -29,7 +29,7 @@ pod 'Pentagram'
         
         pentagram.key = .f
         
-        let note = pentagram.drawNoteForName(.Do3)
+        let note = pentagram.drawNoteForName(.do3)
     }
 ```
 ## Author
